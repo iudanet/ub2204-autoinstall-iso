@@ -20,7 +20,7 @@ GENISO_BOOTIMG = boot/grub/i386-pc/eltorito.img
 GENISO_BOOTCATALOG = /boot.catalog
 GENISO_START_SECTOR = $(shell sudo fdisk -l $(ISO_FILENAME) |grep iso2 | cut -d' ' -f2)
 GENISO_END_SECTOR = $(shell sudo fdisk -l $(ISO_FILENAME) |grep iso2 | cut -d' ' -f3)
-GENISO_LANG = C
+GENISO_LANG = ru_RU.utf8
 
 ## for APU/APU2
 GENISO_ISOLINUX = /usr/lib/ISOLINUX/isolinux.bin
